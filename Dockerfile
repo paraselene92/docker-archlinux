@@ -46,8 +46,9 @@ RUN rm -rf /home/aur/.cache &&\
 
 RUN sudo -u aur yay -S --noconfirm aws-cli-v2
 
-WORKDIR /root
+WORKDIR /home/work
 RUN git clone --depth 1\
-    https://github.com/paraselene92/dotfiles.git dotfiles
+    https://github.com/paraselene92/dotfiles.git dotfiles &&\
+    chmod 777 dotfiles/install.sh
 
 CMD ["/bin/bash"]
