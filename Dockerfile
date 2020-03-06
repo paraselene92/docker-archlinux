@@ -29,7 +29,7 @@ RUN echo "[multilib]" >> /etc/pacman.conf &&\
   touch /etc/sudoers.d/aur &&\
   touch /etc/sudoers.d/work &&\
   echo 'aur ALL=(ALL) ALL' > /etc/sudoers.d/aur &&\
-  echo 'aur ALL=(ALL) ALL' > /etc/sudoers.d/work &&\
+  echo 'work ALL=(ALL) ALL' > /etc/sudoers.d/work &&\
   chown -R aur:aur /home/aur &&\
   chown -R work:work /home/work &&\
   mkdir /build &&\
