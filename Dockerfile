@@ -6,7 +6,7 @@ RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen &&\
   locale-gen &&\
   ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime &&\
   echo "Server = http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/$repo/os/$arch" >> /etc/pacman.d/mirrorlist &&\
-  pacman -Syu --noconfirm vim git openssh fish base-devel
+  pacman -Syu --noconfirm vim git openssh fish base-devel tig
 
 RUN echo "[multilib]" >> /etc/pacman.conf &&\
   echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf &&\
