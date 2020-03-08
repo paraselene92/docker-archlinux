@@ -44,7 +44,7 @@ WORKDIR /root
 RUN rm -rf /home/aur/.cache &&\
   rm -rf /build
 
-RUN sudo -u aur yay -S --noconfirm aws-cli-v2
+RUN sudo -u aur yay -S --noconfirm aws-cli-v2 git-secret
 
 WORKDIR /home/work
 RUN git clone --depth 1\
