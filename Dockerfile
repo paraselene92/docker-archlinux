@@ -44,7 +44,7 @@ WORKDIR /root
 RUN rm -rf /home/aur/.cache &&\
   rm -rf /build
 
-RUN sudo -u aur yay -S --noconfirm aws-cli-v2 git-secret
+RUN sudo -u aur yay -Syu --noconfirm aws-cli-v2 git-secret
 
 WORKDIR /home/work
 RUN git clone --depth 1 https://github.com/paraselene92/dotfiles-docker-env.git dotfiles &&\
