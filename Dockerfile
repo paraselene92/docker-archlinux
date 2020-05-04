@@ -6,7 +6,14 @@ RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen &&\
   locale-gen &&\
   ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime &&\
   echo "Server = http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/$repo/os/$arch" >> /etc/pacman.d/mirrorlist &&\
-  pacman -Syu --noconfirm vim git openssh fish base-devel tig
+  pacman -Syu --noconfirm base-devel \
+   docker \
+   fish \
+   git \
+   openssh \
+   pacman-contrib \
+   tig \
+   vim
 
 RUN echo "[multilib]" >> /etc/pacman.conf &&\
   echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf &&\
@@ -33,7 +40,8 @@ RUN echo "[multilib]" >> /etc/pacman.conf &&\
   chown -R aur:aur /home/aur &&\
   chown -R work:work /home/work &&\
   mkdir /build &&\
-  chown -R aur:aur /build
+  chown -R aur:aur /build &&\
+  usermod -aG docker work
 
 WORKDIR /build
 RUN sudo -u aur git clone https://aur.archlinux.org/yay.git
