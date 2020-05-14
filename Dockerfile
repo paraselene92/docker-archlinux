@@ -13,6 +13,7 @@ RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen &&\
    openssh \
    pacman-contrib \
    tig \
+   unzip \
    vim
 
 RUN echo "[multilib]" >> /etc/pacman.conf &&\
