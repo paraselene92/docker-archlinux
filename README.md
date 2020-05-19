@@ -26,8 +26,10 @@ cd /home/work/dotfiles
   - work: for work
   - aur: for yay install
 - Installed packages
-  - git
-  - tig
   - docker
+  - git
+  - man
   - openssh
+  - tig
+  - unzip
   - vim
