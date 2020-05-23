@@ -6,7 +6,7 @@ This is "Archlinux container" for myself.
 
 ```console
 docker pull paraselene92/archlinux:tagname
-docker run -i -t --rm -w /home/work -u work paraselene92/archlinux:tagname
+docker run -i -t --rm -w /home/work -u work -v (pwd):/home/work paraselene92/archlinux:tagname
 ```
 
 tagname is optional. Default is `latest`. Tagname equals repository tag name(-v). In case repository tag name is "v1.0", tagname is "1.0".
