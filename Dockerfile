@@ -10,6 +10,7 @@ RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen &&\
    docker \
    fish \
    git \
+   jq \
    man \
    openssh \
    pacman-contrib \
