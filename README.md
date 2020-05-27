@@ -28,6 +28,7 @@ cd /home/work/dotfiles
 - Installed packages
   - docker
   - git
+  - jq
   - man
   - openssh
   - tig
