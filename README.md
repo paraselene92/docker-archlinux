@@ -15,6 +15,7 @@ tagname is optional. Default is `latest`. Tagname equals repository tag name(-v)
 
 - Using base image is `archlinux/base`.
 - Using AUR helper is `yay`.
+- Using default shell is `fish`.
 - Clone from `dotfile` repository. You can install it in this container.
 
 ```console
@@ -28,9 +29,11 @@ cd /home/work/dotfiles
 - Installed packages
   - docker
   - git
+  - iputils
   - jq
   - man
   - openssh
   - tig
   - unzip
   - vim
+
