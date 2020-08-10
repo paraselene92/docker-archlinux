@@ -2,10 +2,13 @@ FROM archlinux/base:latest
 ENV LANG="ja_JP.UTF8"\
   LC_TIME="ja_JP.UTF8"
 
+COPY mirrorlist /tmp
+
 RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen &&\
   locale-gen &&\
   ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime &&\
-  echo "Server = http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/$repo/os/$arch" >> /etc/pacman.d/mirrorlist &&\
+  cat /tmp/mirrorlist >> /etc/pacman.d/mirrorlist &&\
+  #echo "Server = http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/$repo/os/$arch" >> /etc/pacman.d/mirrorlist &&\
   pacman -Syu --noconfirm base-devel \
    docker \
    fish \
