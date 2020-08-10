@@ -37,3 +37,8 @@ cd /home/work/dotfiles
   - unzip
   - vim
 
+## Version
+
+- v1.3
+  - add `mirrorlist`file. For Arch linux repo.
+  - Update Arch linux regularly.
