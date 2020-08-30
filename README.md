@@ -39,6 +39,10 @@ cd /home/work/dotfiles
 
 ## Version
 
+- v1.5
+  - Update `.aws/*` secret files.
+  - Update Arch linux regularly.
+
 - v1.4
   - Install Starship (by dotfiles)
 
