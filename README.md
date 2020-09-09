@@ -28,6 +28,7 @@ cd /home/work/dotfiles
   - aur: for yay install
 - Installed packages
   - docker
+  - fzf
   - git
   - iputils
   - jq
@@ -38,6 +39,10 @@ cd /home/work/dotfiles
   - vim
 
 ## Version
+- v1.6
+  - Install fzf
+  - Install ghq (by dotfiles)
+  - Update Arch linux regularly.
 
 - v1.5
   - Update `.aws/*` secret files.

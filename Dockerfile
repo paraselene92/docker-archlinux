@@ -12,6 +12,7 @@ RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen &&\
   pacman -Syu --noconfirm base-devel \
    docker \
    fish \
+   fzf \
    git \
    iputils \
    jq \
