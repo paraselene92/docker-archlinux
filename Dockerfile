@@ -17,6 +17,8 @@ RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen &&\
    iputils \
    jq \
    man \
+   nodejs \
+   npm \
    openssh \
    pacman-contrib \
    tig \
