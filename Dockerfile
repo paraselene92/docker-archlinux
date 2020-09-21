@@ -63,6 +63,7 @@ RUN rm -rf /home/aur/.cache &&\
 RUN sudo -u aur yay -Syu --noconfirm git-secret
 WORKDIR /home/work
 RUN git clone --depth 1 https://github.com/paraselene92/dotfiles-docker-env.git dotfiles &&\
-  chmod 777 dotfiles/install.sh
+  chmod 777 dotfiles/install.sh &&\
+  chown -R work:work dotfiles/
 
 CMD ["/usr/sbin/fish"]
