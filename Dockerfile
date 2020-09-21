@@ -20,6 +20,7 @@ RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen &&\
    openssh \
    pacman-contrib \
    tig \
+   tmux \
    unzip \
    vim
 
