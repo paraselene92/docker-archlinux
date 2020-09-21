@@ -35,10 +35,19 @@ cd /home/work/dotfiles
   - man
   - openssh
   - tig
+  - tmux
   - unzip
   - vim
 
 ## Version
+- v1.7
+  - Install tmux
+  - Install npm and nodejs (for terraform-lsp for coc-nvim)
+  - Install tfenv (by dotfiles)
+  - Install terraform-lsp (by dotfiles)
+  - Update Arch linux regularly.
+  - fix `dotfiles`dir permissions.
+
 - v1.6
   - Install fzf
   - Install ghq (by dotfiles)
