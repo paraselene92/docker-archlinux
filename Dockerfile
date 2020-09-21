@@ -1,6 +1,7 @@
 FROM archlinux/base:latest
-ENV LANG="ja_JP.UTF8"\
-  LC_TIME="ja_JP.UTF8"
+ENV LANG="ja_JP.UTF8" \
+  LC_TIME="ja_JP.UTF8" \
+  TERM="xterm-256color"
 
 COPY mirrorlist /tmp
 
