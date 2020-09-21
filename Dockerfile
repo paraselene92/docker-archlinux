@@ -24,7 +24,8 @@ RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen &&\
    tig \
    tmux \
    unzip \
-   vim
+   vim \
+   zip
 
 RUN echo "[multilib]" >> /etc/pacman.conf &&\
   echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf &&\
