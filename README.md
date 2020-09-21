@@ -40,6 +40,10 @@ cd /home/work/dotfiles
   - vim
 
 ## Version
+- v1.71
+  - add `TERM="xterm-256color"`
+  - fix tfenv settings
+
 - v1.7
   - Install tmux
   - Install npm and nodejs (for terraform-lsp for coc-nvim)
