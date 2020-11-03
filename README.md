@@ -40,6 +40,9 @@ cd /home/work/dotfiles
   - vim
 
 ## Version
+- v1.8
+  - Update Arch linux regularly.
+
 - v1.71
   - add `TERM="xterm-256color"`
   - fix tfenv settings
