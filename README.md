@@ -40,6 +40,9 @@ cd /home/work/dotfiles
   - vim
 
 ## Version
+- v1.9
+  - Update Arch linux regularly.
+
 - v1.8
   - Update Arch linux regularly.
 
